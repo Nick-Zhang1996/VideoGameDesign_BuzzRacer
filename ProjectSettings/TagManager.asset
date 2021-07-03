@@ -8,6 +8,8 @@ TagManager:
   - Buzz
   - T
   - CheckPoint
+  - Fire
+  - UGA
   layers:
   - Default
   - TransparentFX
