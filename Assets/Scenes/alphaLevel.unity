@@ -4962,7 +4962,7 @@ PrefabInstance:
     - target: {fileID: 6838391208357935002, guid: d3a3af07669aa4720a44263f9e29897c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.56
+      value: 7.27
       objectReference: {fileID: 0}
     - target: {fileID: 6838391208357935002, guid: d3a3af07669aa4720a44263f9e29897c,
         type: 3}
@@ -5904,7 +5904,7 @@ GameObject:
   - component: {fileID: 359526366}
   m_Layer: 0
   m_Name: RampCube
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26410,7 +26410,7 @@ PrefabInstance:
     - target: {fileID: 3944523916811927151, guid: 7406e346322ca475b98d04921d567da2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.3
+      value: -14.53
       objectReference: {fileID: 0}
     - target: {fileID: 3944523916811927151, guid: 7406e346322ca475b98d04921d567da2,
         type: 3}
@@ -26580,7 +26580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLogicObject: {fileID: 1630965918}
-  visualShield: {fileID: 0}
+  visualShield: {fileID: 1464102439}
   shieldDuration: 10
   shieldIsActive: 0
   note_count: 0
@@ -26590,6 +26590,12 @@ MonoBehaviour:
   damagePerOpponentCollision: 20
   maxHealth: 100
   health: 100
+--- !u!1 &1464102439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4527031709672184400, guid: 7406e346322ca475b98d04921d567da2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1464102426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1464102440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3944523916811927151, guid: 7406e346322ca475b98d04921d567da2,
@@ -31645,10 +31651,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6267817345754935057, guid: 2d906293d007541c0b083a9495114e8e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6501697558719459665, guid: 2d906293d007541c0b083a9495114e8e,
         type: 3}
       propertyPath: m_Name
       value: GasStation(Spawn)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501697558719459665, guid: 2d906293d007541c0b083a9495114e8e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Boundary
       objectReference: {fileID: 0}
     - target: {fileID: 7258358665677757258, guid: 2d906293d007541c0b083a9495114e8e,
         type: 3}
