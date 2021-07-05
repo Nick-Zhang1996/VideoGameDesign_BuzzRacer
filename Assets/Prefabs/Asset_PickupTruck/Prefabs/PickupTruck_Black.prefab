@@ -388,6 +388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
+  speed: 0
+  steering: 0
 --- !u!114 &1662616480800077769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +402,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0842d6c3d8264b49a635146480e79df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  P: 1
+  targetSpeed: 0
+  steerAngle: 0
+  throttle: 0
+  frontLeftWheelCollider: {fileID: 7895159982661796392}
+  frontRightWheelCollider: {fileID: 1820386269406591434}
+  rearLeftWheelCollider: {fileID: 7609395053911445995}
+  rearRightWheelCollider: {fileID: 6581492409618788987}
+  frontLeftWheelTransform: {fileID: 8052284303330258488}
+  frontRightWheelTransform: {fileID: 38763575515657800}
+  rearLeftWheelTransform: {fileID: 2017359336486251445}
+  rearRightWheelTransform: {fileID: 7028743919044070653}
+  maxSteeringAngle: 30
+  motorForce: 3000
+  brakeForce: 30000
 --- !u!1001 &4944084574768611068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -497,6 +514,30 @@ PrefabInstance:
 --- !u!4 &136900705268766182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 88122f86c8f7844249a36a8ae698220e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4944084574768611068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2017359336486251445 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2349767291437673143, guid: 88122f86c8f7844249a36a8ae698220e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4944084574768611068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7028743919044070653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2672877460032139777, guid: 88122f86c8f7844249a36a8ae698220e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4944084574768611068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8052284303330258488 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6114868699185409852, guid: 88122f86c8f7844249a36a8ae698220e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4944084574768611068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &38763575515657800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4317441322558977868, guid: 88122f86c8f7844249a36a8ae698220e,
     type: 3}
   m_PrefabInstance: {fileID: 4944084574768611068}
   m_PrefabAsset: {fileID: 0}

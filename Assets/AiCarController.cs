@@ -58,7 +58,16 @@ public class AiCarController : MonoBehaviour
         // x rightward
         Vector3 localVelocity = transform.InverseTransformVector(rb.velocity);
         // forward and braking
-        throttle = (localVelocity.z - targetSpeed) * P;
+        
+       
+        if (localVelocity.z < targetSpeed)
+        {
+            throttle = (targetSpeed - localVelocity.z) * P;
+        }
+        else
+        {
+            throttle = 0f;
+        }
         frontLeftWheelCollider.motorTorque = throttle * motorForce;
         frontRightWheelCollider.motorTorque = throttle * motorForce;
         rearLeftWheelCollider.motorTorque = throttle * motorForce;

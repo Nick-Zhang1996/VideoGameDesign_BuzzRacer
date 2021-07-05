@@ -9,6 +9,7 @@ public class PurePursuitAi : MonoBehaviour
 
     public float speed;
     public float steering;
+    private float wheelbase = 3.33f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +21,17 @@ public class PurePursuitAi : MonoBehaviour
     {
         
     }
-    void UpdateControl()
+    public void UpdateControl()
     {
         // calc 2d steering
         Debug.DrawLine(transform.position, Target.transform.position);
         
-        Vector3 targetPosLocal = transform.InverseTransformVector(Traget.transform.position);
+        Vector3 targetPosLocal = transform.InverseTransformVector(Target.transform.position);
         float distance = Mathf.Sqrt(targetPosLocal.x * targetPosLocal.x + targetPosLocal.z * targetPosLocal.z);
         float targetAngle = Mathf.Atan2(targetPosLocal.z, targetPosLocal.x);
+        float radius = distance / (2f * Mathf.Cos(targetAngle));
+        steering = Mathf.Atan(wheelbase / radius) * (targetAngle > 0 ? 1f : -1f);
+        steering = Mathf.Rad2Deg * steering;
 
     }
 }
