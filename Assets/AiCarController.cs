@@ -56,7 +56,7 @@ public class AiCarController : MonoBehaviour
             Debug.Log("Ai go booom");
             explosion.Play();
             visual.SetActive(false);
-            Destroy(gameObject, explosion.duration);
+            Destroy(gameObject, explosion.main.duration);
         }
     }
     private void HandleSteering()
