@@ -321,8 +321,10 @@ GameObject:
   - component: {fileID: 3944523916811927151}
   - component: {fileID: 2038373079516853324}
   - component: {fileID: 6238403149038166080}
+  - component: {fileID: 3708715578528053038}
+  - component: {fileID: 1662616480800077769}
   m_Layer: 0
-  m_Name: PickupTruck_Barrels
+  m_Name: PickupTruck_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,6 +375,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.87, y: 1.85, z: 5.25}
   m_Center: {x: 0, y: 0.6, z: 0.12}
+--- !u!114 &3708715578528053038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169385438624299707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d995273f1c188f4e9bf319042656fde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+--- !u!114 &1662616480800077769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169385438624299707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0842d6c3d8264b49a635146480e79df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4944084574768611068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -380,6 +407,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7424110523546762539}
     m_Modifications:
+    - target: {fileID: -6874540395504895234, guid: 88122f86c8f7844249a36a8ae698220e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b366b36a3c552ef44bba02c28d58ba35, type: 2}
     - target: {fileID: -4216859302048453862, guid: 88122f86c8f7844249a36a8ae698220e,
         type: 3}
       propertyPath: m_RootOrder
