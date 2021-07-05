@@ -22,7 +22,8 @@ public class PlayerLogicHandler : MonoBehaviour
     public int t_count = 0;
 
     // full health 100, 0 health explosion
-    public int damagePerCollision = 20;
+    public int damagePerCollision = 10;
+    public int damagePerOpponentCollision = 20;
     public int maxHealth = 100;
     public int health;
 
@@ -53,6 +54,10 @@ public class PlayerLogicHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Note"))
         {
             Debug.Log("Collect Note");
+            if (!gameLogic.notesTutorialHasTriggered)
+            {
+                gameLogic.TriggerNotesTutorial();
+            }
             other.gameObject.SetActive(false);
             note_count += 1;
         }
@@ -61,6 +66,10 @@ public class PlayerLogicHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Buzz"))
         {
             Debug.Log("Collect Buzz, health return to max");
+            if (!gameLogic.buzzTutorialHasTriggered)
+            {
+                gameLogic.TriggerBuzzTutorial();
+            }
             other.gameObject.SetActive(false);
             health = maxHealth;
             buzz_count += 1;
@@ -70,6 +79,10 @@ public class PlayerLogicHandler : MonoBehaviour
         if (other.gameObject.CompareTag("T"))
         {
             Debug.Log("Collect T, invincibility");
+            if (!gameLogic.tTutorialHasTriggered)
+            {
+                gameLogic.TriggerTTutorial();
+            }
             other.gameObject.SetActive(false);
             horn.m_ToggleChange = true;
             t_count += 1;
@@ -81,6 +94,10 @@ public class PlayerLogicHandler : MonoBehaviour
 
         if (other.gameObject.CompareTag("CheckPoint"))
         {
+            if (!gameLogic.checkpointTutorialHasTriggered)
+            {
+                gameLogic.TriggerCheckpointTutorial();
+            }
             gameLogic.PlayerReachedCheckpoint();
             Debug.Log("game end");
         }
@@ -88,14 +105,25 @@ public class PlayerLogicHandler : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (! shieldIsActive)
+        if (shieldIsActive)
         {
-            health -= damagePerCollision;
-            Debug.Log("Player damege: collision");
+            Debug.Log("Player collision, shield active, no damage");
+            return;
+        }
+
+        if (collision.gameObject.CompareTag("Pursuiter"))
+        {
+            Debug.Log("Player damege: opponent collision");
+            health -= damagePerOpponentCollision;
+            if (!gameLogic.opponentTutorialHasTriggered)
+            {
+                gameLogic.TriggerOpponentTutorial();
+            }
         }
         else
         {
-            Debug.Log("Player collision: no damage");
+            health -= damagePerCollision;
+            Debug.Log("Player damege: collision");
         }
         
     }
