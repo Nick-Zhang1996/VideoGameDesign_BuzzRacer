@@ -6666,10 +6666,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLogicObject: {fileID: 1630965918}
+  visualShield: {fileID: 0}
+  shieldDuration: 10
+  shieldIsActive: 0
   note_count: 0
   buzz_count: 0
   t_count: 0
   damagePerCollision: 20
+  damagePerOpponentCollision: 20
+  maxHealth: 100
   health: 100
 --- !u!4 &1464102440 stripped
 Transform:
@@ -11756,6 +11761,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameEndUi: {fileID: 840003015}
   hudUi: {fileID: 1689274001}
+  mainTutorialUi: {fileID: 0}
+  notesTutorialUi: {fileID: 0}
+  buzzTutorialUi: {fileID: 0}
+  tTutorialUi: {fileID: 0}
+  opponentTutorialUi: {fileID: 0}
+  checkPointTutorialUi: {fileID: 0}
+  mainTutorialHasTriggered: 0
+  notesTutorialHasTriggered: 0
+  buzzTutorialHasTriggered: 0
+  tTutorialHasTriggered: 0
+  opponentTutorialHasTriggered: 0
+  checkpointTutorialHasTriggered: 0
 --- !u!4 &1630965920
 Transform:
   m_ObjectHideFlags: 0
@@ -12003,6 +12020,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 276065262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1812360224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.002872
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.092037
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e98374adb5e54e3fb576ed74bcf9fa2,
+        type: 3}
+      propertyPath: m_Name
+      value: professorModelAlone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e98374adb5e54e3fb576ed74bcf9fa2, type: 3}
 --- !u!1 &1909062743
 GameObject:
   m_ObjectHideFlags: 0
