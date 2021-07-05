@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
 
     private void FixedUpdate()
     {
-        offset = new Vector3(0, 10, -13);
+        offset = new Vector3(0, 7, -10);
         HandleTranslation();
         HandleRotation();
     }
