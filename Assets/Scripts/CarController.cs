@@ -43,23 +43,23 @@ public class CarController : MonoBehaviour
         HandleSteering();
         UpdateWheels();
     }
-    void OnHandbrake(InputValue movementValue)
-    {
+        void OnHandbrake(InputValue movementValue)
+        {
         
-        float val = movementValue.Get<float>();
-        handbrakeOn = val > 0.5f;
+            float val = movementValue.Get<float>();
+            handbrakeOn = val > 0.5f;
 
-    }
-    void OnMove(InputValue movementValue)
-    {
-        Vector2 movementVector = movementValue.Get<Vector2>();
+        }
+        void OnMove(InputValue movementValue)
+        {
+            Vector2 movementVector = movementValue.Get<Vector2>();
 
-        //throttle
-        verticalInput = movementVector.y;
-        horizontalInput = movementVector.x;
+            //throttle
+            verticalInput = movementVector.y;
+            horizontalInput = movementVector.x;
 
 
-    }
+        }
 
     private void HandleSteering()
     {

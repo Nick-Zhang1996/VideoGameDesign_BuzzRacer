@@ -7,12 +7,16 @@ using UnityEngine.InputSystem;
 
 public class AiCarController : MonoBehaviour
 {
+    private Rigidbody rb;
+    private ParticleSystem explosion;
+    public GameObject visual;
+    private PurePursuitAi ai;
+
     public float P = 1.0f;
 
     public float targetSpeed = 0.0f;
     public float steerAngle = 0.0f;
     public float throttle = 0.0f;
-    private Rigidbody rb;
 
     public WheelCollider frontLeftWheelCollider;
     public WheelCollider frontRightWheelCollider;
@@ -27,24 +31,34 @@ public class AiCarController : MonoBehaviour
     public float motorForce;
     public float brakeForce;
 
-    private PurePursuitAi ai;
+  
 
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         ai = this.GetComponent<PurePursuitAi>();
+        explosion = this.GetComponent<ParticleSystem>();
     }
     private void FixedUpdate()
     {
         ai.UpdateControl();
         steerAngle = ai.steering;
-        targetSpeed = ai.speed;
+        targetSpeed = ai.targetSpeed;
         HandleMotor();
         HandleSteering();
         UpdateWheels();
     }
-
+    void OnCollisionEnter(Collision collision)
+    {
+        if (!collision.gameObject.CompareTag("Pursuiter"))
+        {
+            Debug.Log("Ai go booom");
+            explosion.Play();
+            visual.SetActive(false);
+            Destroy(gameObject, explosion.duration);
+        }
+    }
     private void HandleSteering()
     {
         //steerAngle = maxSteeringAngle * horizontalInput;

@@ -67,7 +67,7 @@ public class PlayerLogicHandler : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         health -= damagePerCollision;
-        Debug.Log("collision");
+        Debug.Log("Player collision");
     }
 
 }
