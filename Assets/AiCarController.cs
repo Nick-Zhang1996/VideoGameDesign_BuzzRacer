@@ -11,6 +11,7 @@ public class AiCarController : MonoBehaviour
     private ParticleSystem explosion;
     public GameObject visual;
     private PurePursuitAi ai;
+    private bool hasExploded = false;
 
     public float P = 1.0f;
 
@@ -51,9 +52,17 @@ public class AiCarController : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("Pursuiter"))
+        if (hasExploded)
+        {
+            // sometimes vehicle gets into another collision
+            // while exploding
+            return;
+        }
+        // colliding into boundary or another pursuiter is ok
+        if (! (collision.gameObject.CompareTag("Pursuiter") || collision.gameObject.CompareTag("Boundary")))
         {
             Debug.Log("Ai go booom");
+            hasExploded = true;
             explosion.Play();
             visual.SetActive(false);
             Destroy(gameObject, explosion.main.duration);

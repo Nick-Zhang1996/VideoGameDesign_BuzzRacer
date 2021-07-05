@@ -80,6 +80,10 @@ public class GameLogicHandler : MonoBehaviour
     void Start()
     {
         hudUi.SetActive(true);
+        if (!mainTutorialHasTriggered)
+        {
+            TriggerMainTutorial();
+        }
     }
 
     // Update is called once per frame
@@ -106,5 +110,9 @@ public class GameLogicHandler : MonoBehaviour
     {
         gameEndUi.SetActive(true);
         hudUi.SetActive(false);
+        if (!checkpointTutorialHasTriggered)
+        {
+            TriggerCheckpointTutorial();
+        }
     }
 }

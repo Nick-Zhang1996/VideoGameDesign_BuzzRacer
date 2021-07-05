@@ -111,6 +111,12 @@ public class PlayerLogicHandler : MonoBehaviour
             return;
         }
 
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            // OK to collide into boundary
+            return;
+        }
+
         if (collision.gameObject.CompareTag("Pursuiter"))
         {
             Debug.Log("Player damege: opponent collision");
