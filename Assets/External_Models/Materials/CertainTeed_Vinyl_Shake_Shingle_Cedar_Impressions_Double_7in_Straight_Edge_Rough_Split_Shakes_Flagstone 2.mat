@@ -8,6 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CertainTeed_Vinyl_Shake_Shingle_Cedar_Impressions_Double_7in_Straight_Edge_Rough_Split_Shakes_Flagstone
+    2
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
