@@ -1066,12 +1066,12 @@ PrefabInstance:
     - target: {fileID: 859850322706372410, guid: 16e268af1e4d34968a3e9a12a95b95ff,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 859850322706372410, guid: 16e268af1e4d34968a3e9a12a95b95ff,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 99
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 859850322706372410, guid: 16e268af1e4d34968a3e9a12a95b95ff,
         type: 3}
@@ -1135,7 +1135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73, y: 154}
+  m_AnchoredPosition: {x: 73, y: 145}
   m_SizeDelta: {x: 626.0969, y: 92.89899}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418184473
@@ -1246,7 +1246,7 @@ PrefabInstance:
     - target: {fileID: 5750457659635119069, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
       propertyPath: m_Text
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5750457660486829556, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
@@ -2105,7 +2105,7 @@ PrefabInstance:
     - target: {fileID: 5750457659635119069, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
       propertyPath: m_Text
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5750457660486829556, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
@@ -2432,7 +2432,7 @@ PrefabInstance:
     - target: {fileID: 5750457659635119069, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
       propertyPath: m_Text
-      value: T
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5750457660486829556, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
@@ -2577,7 +2577,7 @@ PrefabInstance:
     - target: {fileID: 5750457660486829558, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: DemoLevel
+      value: alphaLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5750457660486829558, guid: 7550f5ee819d04edb9e7b15129e9d467,
         type: 3}
