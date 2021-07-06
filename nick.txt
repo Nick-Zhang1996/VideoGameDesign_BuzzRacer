@@ -1,0 +1,32 @@
+Assets Implemented:
+Nick:
+Player: (independent)
+	Pickup Truck ( Unity Asset Store)
+	Wheel Colliders
+	Input System 
+	CarController.cs ( input -> wheel forces)
+	PlayerLogicHandler.cs (handles collectible, buffs, player health, collision etc)
+	SmokeHandler.cs (car emits white smoke when healthy, black smoke when low health)
+AiOpponents:(independent)
+	PurePursuitAi.cs (calculate steering with pure pursuit algorithm)
+	AiCarController.cs (actuate control commands to wheel colliders, determine speed, handles explosion on collision)
+Tutorial: (independent)
+	A bunch of canvas controlled by GameLogicHandler.cs
+
+
+BackgroundMusic:(independent)
+	AudioPlayer.cs
+
+GameLogic: (independent)
+	CameraFollow.cs (adapted from class project)
+	GameLogicHandler.cs (handles tutorial and other game logic)
+
+
+
+Misc:
+HealthHandler.cs (unused)
+HudHandler.cs (head up display)
+
+UI: (collaboration with Sophia)
+WorldMap: (collaboration with Liam)
+	Arrangement of elemnts, invisible colliders for boundary
