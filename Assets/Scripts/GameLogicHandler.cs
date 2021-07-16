@@ -101,7 +101,7 @@ public class GameLogicHandler : MonoBehaviour
         {
             currentTutorialUi.SetActive(false);
             Time.timeScale = 1f;
-            Debug.Log("resume game");
+            //Debug.Log("resume game");
         }
     }
 
