@@ -10,6 +10,8 @@ TagManager:
   - CheckPoint
   - Boundary
   - Pursuiter
+  - PreCheckpoint
+  - Crates
   layers:
   - Default
   - TransparentFX

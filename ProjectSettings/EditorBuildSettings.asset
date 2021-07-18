@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/ButtonDebug.unity
+    guid: 391f7e8d8f5398d44b461c43ba056afd
+  - enabled: 1
+    path: Assets/Scenes/SophiaMainMenu.unity
     guid: 789051471bf0540ae94da6ef1f0fa7a8
   - enabled: 0
     path: Assets/Scenes/DemoLevel.unity

@@ -1,6 +1,10 @@
 fileFormatVersion: 2
-guid: 23f2e980cd8fd4b26abaff5a74de8d33
+<<<<<<< HEAD:Assets/20 Logos PSD.meta
+guid: 288b8ab96f71ce548ba602ef22171fcf
 folderAsset: yes
+=======
+guid: d31572aca8582bb42ace172852e256ae
+>>>>>>> nick:Assets/Scenes/GoodBackground.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
