@@ -1,0 +1,1067 @@
+fileFormatVersion: 2
+guid: 09cc27803a4474eb5878f3a2ad202f52
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 2099309093474793582
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh100
+      Group1 Component_1_1 ModelAction
+  - first:
+      74: -8127419274958194136
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh102
+      Group126 Group125 Component_1_1 ModelAction
+  - first:
+      74: 4568316083430135523
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh173
+      Group175 Group133 Component_1_1 ModelAction
+  - first:
+      74: 7731194768371574254
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh174
+      Group133 Component_1_1 ModelAction
+  - first:
+      74: -3534859581510515334
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh175
+      Group133 Component_1_1 ModelAction
+  - first:
+      74: 3739203138477757213
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh177
+      Doorknob_octagonal_1_1 Component_1_1 ModelAction
+  - first:
+      74: 7338498156366424230
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh180
+      MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 1955652495663091918
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh187
+      WOMEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 4455147655273554159
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh193
+      RESTROOMS1 Component_1_1 ModelAction
+  - first:
+      74: -3545451889681635742
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh197
+      OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: 3198695461884826638
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh203
+      Doorknob_octagonal_2_1 Component_1_1 ModelAction
+  - first:
+      74: -2431709834767881485
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh204
+      Doorknob_octagonal_2_2 Component_1_1 ModelAction
+  - first:
+      74: 2912293203909229180
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh205
+      Component_1_1 ModelAction
+  - first:
+      74: -768409059346584669
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh88
+      Group_1_21 Group112 Group111 Group84 Group1 Component_1_
+  - first:
+      74: 5952737702763871572
+    second: 'Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh90
+      Group115 Group114 Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: 3538721830405192742
+    second: Mesh88 Group_1_21 Group112 Group111 Group84 Group1 Component_1_|Mesh99
+      Group84 Group1 Component_1_1 ModelAction
+  - first:
+      74: -4084249288495217312
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh100
+      Group1 Component_1_1 ModelAction
+  - first:
+      74: 1889101559470862479
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh102
+      Group126 Group125 Component_1_1 ModelAction
+  - first:
+      74: -6238938427572062238
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh173
+      Group175 Group133 Component_1_1 ModelAction
+  - first:
+      74: 4830271425444490905
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh174
+      Group133 Component_1_1 ModelAction
+  - first:
+      74: -831626987894953795
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh175
+      Group133 Component_1_1 ModelAction
+  - first:
+      74: 3991368124465022323
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh177
+      Doorknob_octagonal_1_1 Component_1_1 ModelAction
+  - first:
+      74: 1931212476277249815
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh180
+      MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -1724399577641149450
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh187
+      WOMEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -2761650251149949275
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh193
+      RESTROOMS1 Component_1_1 ModelAction
+  - first:
+      74: -3327966008924927120
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh197
+      OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: 2875896496295954367
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh203
+      Doorknob_octagonal_2_1 Component_1_1 ModelAction
+  - first:
+      74: -1388896923801802766
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh204
+      Doorknob_octagonal_2_2 Component_1_1 ModelAction
+  - first:
+      74: -1240935276151739496
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh205
+      Component_1_1 ModelAction
+  - first:
+      74: -1823538286330977743
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh88
+      Group_1_21 Group112 Group111 Group84 Group1 Component_1_
+  - first:
+      74: -3292266818953618169
+    second: 'Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh90
+      Group115 Group114 Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: -4370331814588967811
+    second: Mesh90 Group115 Group114 Group111 Group84 Group1 Component_1_1 |Mesh99
+      Group84 Group1 Component_1_1 ModelAction
+  - first:
+      74: 3675180839808214471
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh100 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 4485659911862055336
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: 2463152473173660896
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 6372267148056022704
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -291821281271065704
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -7657889969830506695
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: 74007396909578589
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: 1365379555766629316
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -5598760205116395613
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: 1255007720760488600
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: -6948625124876621726
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: 9037584373744253380
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: -7445760370570895948
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 6743045809409456681
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh88 Group_1_21 Group112
+      Group111 Group84 Group1 Component_1_
+  - first:
+      74: -7860718658079968755
+    second: 'Mesh99 Group84 Group1 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -132403419516483293
+    second: Mesh99 Group84 Group1 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 7152007316173689310
+    second: Mesh100 Group1 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: -5202865333598562584
+    second: Mesh100 Group1 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: -2610958529660199500
+    second: Mesh100 Group1 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 24081768679887778
+    second: Mesh100 Group1 Component_1_1 Model|Mesh174 Group133 Component_1_1 ModelAction
+  - first:
+      74: 6079474163241083415
+    second: Mesh100 Group1 Component_1_1 Model|Mesh175 Group133 Component_1_1 ModelAction
+  - first:
+      74: -8685248332844121847
+    second: Mesh100 Group1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1 Component_1_1
+      ModelAction
+  - first:
+      74: 3051109799339757019
+    second: Mesh100 Group1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 3467058955408678092
+    second: Mesh100 Group1 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -6773482058135094349
+    second: Mesh100 Group1 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1 ModelAction
+  - first:
+      74: -6092446593587057474
+    second: Mesh100 Group1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: 1434247048558377756
+    second: Mesh100 Group1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1 Component_1_1
+      ModelAction
+  - first:
+      74: -7938837883405985206
+    second: Mesh100 Group1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2 Component_1_1
+      ModelAction
+  - first:
+      74: 1059882361840439941
+    second: Mesh100 Group1 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: -1303645754563055826
+    second: Mesh100 Group1 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: 7760735801788249306
+    second: 'Mesh100 Group1 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -9017340017579707527
+    second: Mesh100 Group1 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -6610442204416257892
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh100 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 689957711062346497
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh102 Group126 Group125
+      Component_1_1 ModelAction
+  - first:
+      74: 1449053958731211953
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh173 Group175 Group133
+      Component_1_1 ModelAction
+  - first:
+      74: 6563374275203269281
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 3393502986292806600
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 5002833390224433177
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: -8805303376906939919
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: 481687862283826706
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -7158055853117003897
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: 4050597966562934295
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: 2099707531127248868
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: -254940717322606858
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: 8348569137311950971
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 7267834544104229002
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh88 Group_1_21 Group112
+      Group111 Group84 Group1 Component_1_
+  - first:
+      74: 1075047484702108425
+    second: 'Mesh102 Group126 Group125 Component_1_1 Model|Mesh90 Group115 Group114
+      Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: 4531904620300634708
+    second: Mesh102 Group126 Group125 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 2465774561244248756
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh100 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 5708792044205731052
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh102 Group126 Group125
+      Component_1_1 ModelAction
+  - first:
+      74: 4210924773274800159
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh173 Group175 Group133
+      Component_1_1 ModelAction
+  - first:
+      74: 8264127891573161389
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 1098676483020071069
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -4456301684595945690
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: -6806412480238260064
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -3436236348617212366
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: 6175140207602708545
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: 2641566113022790497
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: 5391435306436733487
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: -1031316646508391753
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: 4042552275480456036
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 5251001576774135799
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh88 Group_1_21 Group112
+      Group111 Group84 Group1 Component_1_
+  - first:
+      74: -6138968989009232347
+    second: 'Mesh173 Group175 Group133 Component_1_1 Model|Mesh90 Group115 Group114
+      Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: -2124897700307339122
+    second: Mesh173 Group175 Group133 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -2201130256140302861
+    second: Mesh174 Group133 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: 4441945224646635594
+    second: Mesh174 Group133 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: 5711970973090518526
+    second: Mesh174 Group133 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -533596141381429558
+    second: Mesh174 Group133 Component_1_1 Model|Mesh174 Group133 Component_1_1 ModelAction
+  - first:
+      74: -7998630297034008542
+    second: Mesh174 Group133 Component_1_1 Model|Mesh175 Group133 Component_1_1 ModelAction
+  - first:
+      74: 7744064872312339514
+    second: Mesh174 Group133 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1 Component_1_1
+      ModelAction
+  - first:
+      74: -7124687293762307459
+    second: Mesh174 Group133 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 6017314532700374780
+    second: Mesh174 Group133 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -3000255464371484472
+    second: Mesh174 Group133 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: 527415968233226708
+    second: Mesh174 Group133 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: -7969403420391125696
+    second: Mesh174 Group133 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1 Component_1_1
+      ModelAction
+  - first:
+      74: 1906892778282446121
+    second: Mesh174 Group133 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2 Component_1_1
+      ModelAction
+  - first:
+      74: 748191844823368022
+    second: Mesh174 Group133 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: -938317559043147948
+    second: Mesh174 Group133 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: 1498376385118075741
+    second: 'Mesh174 Group133 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -7805836701169406143
+    second: Mesh174 Group133 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -725348012679920978
+    second: Mesh175 Group133 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: 5542287950597802235
+    second: Mesh175 Group133 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: 4108046759182446220
+    second: Mesh175 Group133 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -5849911873136272338
+    second: Mesh175 Group133 Component_1_1 Model|Mesh174 Group133 Component_1_1 ModelAction
+  - first:
+      74: -6537346672796825135
+    second: Mesh175 Group133 Component_1_1 Model|Mesh175 Group133 Component_1_1 ModelAction
+  - first:
+      74: 7804238039852348420
+    second: Mesh175 Group133 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1 Component_1_1
+      ModelAction
+  - first:
+      74: 2879214811978477529
+    second: Mesh175 Group133 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 5610452157339698591
+    second: Mesh175 Group133 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: 4866545907576628880
+    second: Mesh175 Group133 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: 1877633778748198727
+    second: Mesh175 Group133 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: -5283884401458713722
+    second: Mesh175 Group133 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1 Component_1_1
+      ModelAction
+  - first:
+      74: 365564045576036202
+    second: Mesh175 Group133 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2 Component_1_1
+      ModelAction
+  - first:
+      74: 8076582484957794104
+    second: Mesh175 Group133 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: -5592581962455821629
+    second: Mesh175 Group133 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: 921924143229381840
+    second: 'Mesh175 Group133 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -5350783717306659189
+    second: Mesh175 Group133 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -7250470693547150380
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh100 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -5118187612228472616
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh102 Group126 Group125
+      Component_1_1 ModelAction
+  - first:
+      74: 8538601322385638192
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh173 Group175 Group133
+      Component_1_1 ModelAction
+  - first:
+      74: -1948739318139819837
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 5113802849395729197
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -96841489832620628
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: -4461688705478636475
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -443711103739292033
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh187 WOMEN_3_1
+      Component_1_1 ModelAction
+  - first:
+      74: 6323334109554847802
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh193 RESTROOMS1
+      Component_1_1 ModelAction
+  - first:
+      74: -6112324764732932507
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: -5253582446806567268
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: -6785238084453104274
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: 175715002291047875
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh205 Component_1_1
+      ModelAction
+  - first:
+      74: -1167911043045900909
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh88 Group_1_21
+      Group112 Group111 Group84 Group1 Component_1_
+  - first:
+      74: -5282716572468802793
+    second: 'Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh90 Group115 Group114
+      Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: -5552847968971440383
+    second: Mesh177 Doorknob_octagonal_1_1 Component_1_1 Model|Mesh99 Group84 Group1
+      Component_1_1 ModelAction
+  - first:
+      74: -7738304856442990214
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: -2093056186267609384
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: 7105732660115702354
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -836227558033620407
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh174 Group133 Component_1_1 ModelAction
+  - first:
+      74: -1626656532108872923
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh175 Group133 Component_1_1 ModelAction
+  - first:
+      74: 5261438277880786519
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1 Component_1_1
+      ModelAction
+  - first:
+      74: 244832077409927294
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -2957173045762969526
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 4274394193114588273
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: 5532118110657749108
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: -2362325705436429441
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1 Component_1_1
+      ModelAction
+  - first:
+      74: -7919126759747331099
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2 Component_1_1
+      ModelAction
+  - first:
+      74: 8225619964583963332
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: -8704666747580329196
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: 4531382903901975881
+    second: 'Mesh180 MEN_3_1 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -2286998788240588583
+    second: Mesh180 MEN_3_1 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 3208918489140705798
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: -7505031346889039377
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: -8407706072275378444
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 2444054088858538002
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 1228449236593754522
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 1498701147859084482
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: 5259675953086812861
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -2693884558043487262
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -3044208600907528575
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: -7216422184520797205
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: -7424491782507562423
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: 8121604495793067249
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: 1691070639276231630
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 1076228975233524342
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: -5091138418560883138
+    second: 'Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -7129637287850323992
+    second: Mesh187 WOMEN_3_1 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -8234091784898465555
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: 5674856143312614260
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: 234061048627230321
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -4469994250368205799
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -675222646736891047
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 4186879380665215776
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: -7005260482172928858
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -1286493943105359559
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: 701134427796836612
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: -1341952611256112806
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: 5671409570250248351
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: 6255540164863595048
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: -817903097357877446
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 9070339383180394409
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: 2109716734523968322
+    second: 'Mesh193 RESTROOMS1 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: 4121394029359618245
+    second: Mesh193 RESTROOMS1 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 8966609141775215310
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: 766333546842897000
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1
+      ModelAction
+  - first:
+      74: 4491766073766811393
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: -8120656765258869237
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh174 Group133 Component_1_1 ModelAction
+  - first:
+      74: 1557331037901761159
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh175 Group133 Component_1_1 ModelAction
+  - first:
+      74: 8817446862605625776
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1 Component_1_1
+      ModelAction
+  - first:
+      74: -6163944875491202217
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -1399574633512376869
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: -4901334790108263579
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1
+      ModelAction
+  - first:
+      74: -4546182033715589023
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: 4686974284857747517
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1 Component_1_1
+      ModelAction
+  - first:
+      74: 4828272197696442423
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2 Component_1_1
+      ModelAction
+  - first:
+      74: -2961001682742663949
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 579548362618810378
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111
+      Group84 Group1 Component_1_
+  - first:
+      74: -4347156401897915062
+    second: 'Mesh197 OFFICE1 Component_1_1 Model|Mesh90 Group115 Group114 Group111
+      Group84 Group1 Component_1_1 '
+  - first:
+      74: -8180340724850827929
+    second: Mesh197 OFFICE1 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 8039395358831188864
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh100 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: 7124446918000141679
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh102 Group126 Group125
+      Component_1_1 ModelAction
+  - first:
+      74: 7998541165589848669
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh173 Group175 Group133
+      Component_1_1 ModelAction
+  - first:
+      74: -1951373277390844107
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 1194809703615725082
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 690545958961197791
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: -92890876839504341
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -2518076700946353959
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh187 WOMEN_3_1
+      Component_1_1 ModelAction
+  - first:
+      74: -3271394065085371013
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh193 RESTROOMS1
+      Component_1_1 ModelAction
+  - first:
+      74: 5742468733528221265
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: -5588525633878203639
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: -6773583847884200468
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: 2937594954947293879
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh205 Component_1_1
+      ModelAction
+  - first:
+      74: 2752850271261298223
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh88 Group_1_21
+      Group112 Group111 Group84 Group1 Component_1_
+  - first:
+      74: 4002302807881638361
+    second: 'Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh90 Group115 Group114
+      Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: 196605044383502761
+    second: Mesh203 Doorknob_octagonal_2_1 Component_1_1 Model|Mesh99 Group84 Group1
+      Component_1_1 ModelAction
+  - first:
+      74: -4000488573880342573
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh100 Group1 Component_1_1
+      ModelAction
+  - first:
+      74: -1050302948072546824
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh102 Group126 Group125
+      Component_1_1 ModelAction
+  - first:
+      74: -944516484274412051
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh173 Group175 Group133
+      Component_1_1 ModelAction
+  - first:
+      74: -1438520374004668488
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh174 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 4797557074568365847
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh175 Group133 Component_1_1
+      ModelAction
+  - first:
+      74: 5163300209488882427
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1
+      Component_1_1 ModelAction
+  - first:
+      74: -333713382259224019
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1
+      ModelAction
+  - first:
+      74: -7721850364658771739
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh187 WOMEN_3_1
+      Component_1_1 ModelAction
+  - first:
+      74: 4513946318186916957
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh193 RESTROOMS1
+      Component_1_1 ModelAction
+  - first:
+      74: 944239537870158685
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1
+      ModelAction
+  - first:
+      74: 2076817034733064638
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1
+      Component_1_1 ModelAction
+  - first:
+      74: 4119837956370777086
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2
+      Component_1_1 ModelAction
+  - first:
+      74: 174288110093706790
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh205 Component_1_1
+      ModelAction
+  - first:
+      74: 2213957162414050174
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh88 Group_1_21
+      Group112 Group111 Group84 Group1 Component_1_
+  - first:
+      74: -5484197658844711860
+    second: 'Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh90 Group115 Group114
+      Group111 Group84 Group1 Component_1_1 '
+  - first:
+      74: 1341297719141922183
+    second: Mesh204 Doorknob_octagonal_2_2 Component_1_1 Model|Mesh99 Group84 Group1
+      Component_1_1 ModelAction
+  - first:
+      74: 7489851541396899989
+    second: Mesh205 Component_1_1 Model|Mesh100 Group1 Component_1_1 ModelAction
+  - first:
+      74: -6732223685485902158
+    second: Mesh205 Component_1_1 Model|Mesh102 Group126 Group125 Component_1_1 ModelAction
+  - first:
+      74: 3081116021652403324
+    second: Mesh205 Component_1_1 Model|Mesh173 Group175 Group133 Component_1_1 ModelAction
+  - first:
+      74: -4353946253780812407
+    second: Mesh205 Component_1_1 Model|Mesh174 Group133 Component_1_1 ModelAction
+  - first:
+      74: -9078475314636159227
+    second: Mesh205 Component_1_1 Model|Mesh175 Group133 Component_1_1 ModelAction
+  - first:
+      74: -9076770850377072815
+    second: Mesh205 Component_1_1 Model|Mesh177 Doorknob_octagonal_1_1 Component_1_1
+      ModelAction
+  - first:
+      74: -676079359251426487
+    second: Mesh205 Component_1_1 Model|Mesh180 MEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 1328120064000897281
+    second: Mesh205 Component_1_1 Model|Mesh187 WOMEN_3_1 Component_1_1 ModelAction
+  - first:
+      74: 8237811132059249186
+    second: Mesh205 Component_1_1 Model|Mesh193 RESTROOMS1 Component_1_1 ModelAction
+  - first:
+      74: -1908388769359683009
+    second: Mesh205 Component_1_1 Model|Mesh197 OFFICE1 Component_1_1 ModelAction
+  - first:
+      74: -1453413844302463062
+    second: Mesh205 Component_1_1 Model|Mesh203 Doorknob_octagonal_2_1 Component_1_1
+      ModelAction
+  - first:
+      74: -8783070105195781848
+    second: Mesh205 Component_1_1 Model|Mesh204 Doorknob_octagonal_2_2 Component_1_1
+      ModelAction
+  - first:
+      74: -1650911732551522371
+    second: Mesh205 Component_1_1 Model|Mesh205 Component_1_1 ModelAction
+  - first:
+      74: 823488160743857168
+    second: Mesh205 Component_1_1 Model|Mesh88 Group_1_21 Group112 Group111 Group84
+      Group1 Component_1_
+  - first:
+      74: -4567252984672927484
+    second: 'Mesh205 Component_1_1 Model|Mesh90 Group115 Group114 Group111 Group84
+      Group1 Component_1_1 '
+  - first:
+      74: -4999592213196611483
+    second: Mesh205 Component_1_1 Model|Mesh99 Group84 Group1 Component_1_1 ModelAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

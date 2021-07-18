@@ -8,6 +8,8 @@ TagManager:
   - Buzz
   - T
   - CheckPoint
+  - Boundary
+  - Pursuiter
   layers:
   - Default
   - TransparentFX
