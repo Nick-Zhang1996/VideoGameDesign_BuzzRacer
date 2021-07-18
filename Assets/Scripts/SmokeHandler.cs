@@ -6,6 +6,7 @@ public class SmokeHandler : MonoBehaviour
 {
 
     public GameObject damageSmokeObject;
+    public int CriticalHealth = 50;
     PlayerLogicHandler player;
     ParticleSystem whiteSmoke;
     ParticleSystem blackSmoke;
@@ -24,14 +25,14 @@ public class SmokeHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.health < 30 && healthy_smoke)
+        if (player.health < CriticalHealth && healthy_smoke)
         {
             healthy_smoke = false;
             whiteSmoke.Stop(false);
             blackSmoke.Play();
         }
 
-        if (player.health > 30 && !healthy_smoke)
+        if (player.health > CriticalHealth && !healthy_smoke)
         {
             healthy_smoke = true;
             blackSmoke.Stop();

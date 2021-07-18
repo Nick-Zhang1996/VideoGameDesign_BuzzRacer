@@ -6,13 +6,14 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Vector3 offset;
+    [SerializeField] private Vector3 angleOffset;
     [SerializeField] private Transform target;
     [SerializeField] private float translateSpeed = 5f;
     [SerializeField] private float rotationSpeed = 5f;
 
     private void FixedUpdate()
     {
-        offset = new Vector3(0, 7, -10);
+
         HandleTranslation();
         HandleRotation();
     }
@@ -25,7 +26,7 @@ public class CameraFollow : MonoBehaviour
     private void HandleRotation()
     {
         var direction = target.position - transform.position;
-        var rotation = Quaternion.LookRotation(direction, Vector3.up);
+        var rotation = Quaternion.LookRotation(direction, Vector3.up) * Quaternion.Euler(angleOffset);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
 }

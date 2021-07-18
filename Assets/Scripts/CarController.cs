@@ -10,6 +10,7 @@ public class CarController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private float steerAngle = 0.0f;
+    public float maxSpeed;
     public bool handbrakeOn = false;
     public bool mainBrakeOn = false;
     private Rigidbody rb;
@@ -107,10 +108,21 @@ public class CarController : MonoBehaviour
             rearLeftWheelCollider.brakeTorque = 0f;
             rearRightWheelCollider.brakeTorque = 0f;
 
-            frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
-            frontRightWheelCollider.motorTorque = verticalInput * motorForce;
-            rearLeftWheelCollider.motorTorque = verticalInput * motorForce;
-            rearRightWheelCollider.motorTorque = verticalInput * motorForce;
+            if (Mathf.Abs(localVelocity.z) < maxSpeed)
+            {
+                frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
+                frontRightWheelCollider.motorTorque = verticalInput * motorForce;
+                rearLeftWheelCollider.motorTorque = verticalInput * motorForce;
+                rearRightWheelCollider.motorTorque = verticalInput * motorForce;
+                
+            }
+            else
+            {
+                frontLeftWheelCollider.motorTorque = 0f;
+                frontRightWheelCollider.motorTorque = 0f;
+                rearLeftWheelCollider.motorTorque = 0f;
+                rearRightWheelCollider.motorTorque = 0f;
+            }
             currentMotorTorque = verticalInput * motorForce;
             currentBrakeTorque = 0f;
         }
