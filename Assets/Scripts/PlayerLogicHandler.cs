@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class PlayerLogicHandler : MonoBehaviour
 {
 
@@ -46,6 +48,7 @@ public class PlayerLogicHandler : MonoBehaviour
             visualShield.SetActive(false);
             Debug.Log("shield disabled");
         }
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -93,13 +96,17 @@ public class PlayerLogicHandler : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("CheckPoint"))
+        { 
+            gameLogic.PlayerReachedCheckpoint();
+            Debug.Log("game end");
+        }
+
+        if (other.gameObject.CompareTag("PreCheckpoint"))
         {
             if (!gameLogic.checkpointTutorialHasTriggered)
             {
                 gameLogic.TriggerCheckpointTutorial();
             }
-            gameLogic.PlayerReachedCheckpoint();
-            Debug.Log("game end");
         }
     }
 

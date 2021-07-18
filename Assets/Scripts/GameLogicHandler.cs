@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class GameLogicHandler : MonoBehaviour
 {
     public GameObject gameEndUi;
     public GameObject hudUi;
+    public GameObject pauseUi;
+    public GameObject player;
 
     public GameObject mainTutorialUi;
     public GameObject notesTutorialUi;
@@ -14,14 +17,18 @@ public class GameLogicHandler : MonoBehaviour
     public GameObject tTutorialUi;
     public GameObject opponentTutorialUi;
     public GameObject checkPointTutorialUi;
+    public Text gameEndUiText;
 
     private GameObject currentTutorialUi;
+    public bool enableTutorials;
     public bool mainTutorialHasTriggered = false;
     public bool notesTutorialHasTriggered = false;
     public bool buzzTutorialHasTriggered = false;
     public bool tTutorialHasTriggered = false;
     public bool opponentTutorialHasTriggered = false;
     public bool checkpointTutorialHasTriggered = false;
+
+    private PlayerLogicHandler playerLogic;
     public void TriggerMainTutorial()
     {
         Time.timeScale = 0f;
@@ -79,6 +86,17 @@ public class GameLogicHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    
+        if (!enableTutorials)
+        {
+           mainTutorialHasTriggered = true;
+            notesTutorialHasTriggered = true;
+            buzzTutorialHasTriggered = true;
+            tTutorialHasTriggered = true;
+            opponentTutorialHasTriggered = true;
+            checkpointTutorialHasTriggered = true;
+        }
+        playerLogic = player.GetComponent<PlayerLogicHandler>();
         hudUi.SetActive(true);
         if (!mainTutorialHasTriggered)
         {
@@ -89,7 +107,19 @@ public class GameLogicHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (pauseUi.activeSelf)
+            {
+                pauseUi.SetActive(false);
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                pauseUi.SetActive(true);
+                Time.timeScale = 0f;
+            }
+        }
     }
 
     // handbrake (space bar) is used to unpause tutorials
@@ -99,20 +129,34 @@ public class GameLogicHandler : MonoBehaviour
         bool released = val < 0.5f;
         if (released)
         {
-            currentTutorialUi.SetActive(false);
+            if (currentTutorialUi != null)
+            {
+                currentTutorialUi.SetActive(false);
+            }
+
             Time.timeScale = 1f;
             Debug.Log("resume game");
         }
     }
 
-    // player needs to call this
-    public void PlayerReachedCheckpoint()
+    public void PlayerReachedPreCheckpoint()
     {
-        gameEndUi.SetActive(true);
-        hudUi.SetActive(false);
         if (!checkpointTutorialHasTriggered)
         {
             TriggerCheckpointTutorial();
         }
+    }
+    // player needs to call this
+    public void PlayerReachedCheckpoint()
+    {
+        
+        hudUi.SetActive(false);
+        // calculate final score
+        float totalNotes = 12f;
+        float gpa = (float) playerLogic.note_count / totalNotes * 4f;
+
+        gameEndUiText.text = "Level Complete! \n Your GPA is " + gpa.ToString() +", You passed";
+
+        gameEndUi.SetActive(true);
     }
 }
