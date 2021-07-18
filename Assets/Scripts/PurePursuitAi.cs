@@ -7,8 +7,8 @@ public class PurePursuitAi : MonoBehaviour
 
     public GameObject Target;
     private Rigidbody rb;
-    public float minSpeed = 5.0f;
-    public float targetSpeed;
+    public float minSpeed;
+    [HideInInspector] public float targetSpeed;
     public float steering;
     private float wheelbase = 3.33f;
     // Start is called before the first frame update

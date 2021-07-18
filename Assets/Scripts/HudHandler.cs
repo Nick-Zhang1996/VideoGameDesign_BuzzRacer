@@ -12,13 +12,14 @@ public class HudHandler : MonoBehaviour
     public Text texBuzzCount;
     public Text textHealth;
 
-    public GameObject ramblingWreck;
+    private GameObject playerObject;
     private PlayerLogicHandler player;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = ramblingWreck.GetComponent<PlayerLogicHandler>();
+        playerObject = GameObject.Find("Player");
+        player = playerObject.GetComponent<PlayerLogicHandler>();
     }
 
     // Update is called once per frame

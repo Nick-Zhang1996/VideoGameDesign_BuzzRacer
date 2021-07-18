@@ -11,7 +11,7 @@ public class AiCarController : MonoBehaviour
     private ParticleSystem explosion;
     public GameObject visual;
     private PurePursuitAi ai;
-    private BoxCollider collider;
+    private BoxCollider boxCollider;
     private bool hasExploded = false;
 
     public float P = 1.0f;
@@ -38,7 +38,7 @@ public class AiCarController : MonoBehaviour
         rb = this.GetComponent<Rigidbody>();
         ai = this.GetComponent<PurePursuitAi>();
         explosion = this.GetComponent<ParticleSystem>();
-        collider = this.GetComponent<BoxCollider>();
+        boxCollider = this.GetComponent<BoxCollider>();
     }
     private void FixedUpdate()
     {
@@ -64,7 +64,7 @@ public class AiCarController : MonoBehaviour
             hasExploded = true;
             explosion.Play();
             visual.SetActive(false);
-            collider.enabled = false;
+            boxCollider.enabled = false;
             Destroy(gameObject, explosion.main.duration);
         }
     }
