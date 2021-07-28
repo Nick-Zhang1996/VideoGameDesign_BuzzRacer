@@ -15,18 +15,20 @@ public class PlayerLogicHandler : MonoBehaviour
     public GameObject generalTextObject;
     public Text text;
     public Text continuedText;
+    private Rigidbody rb;
 
     // shield
     public GameObject visualShield;
     public bool shieldIsActive;
     private float shieldActiveTime;
     public float shieldDuration = 10f;
+    private bool pendingReset = false;
 
     // health and damage
     // full health 100, 0 health explosion
-    public int damagePerCollision = 10;
-    public int damagePerOpponentCollision = 20;
-    public int maxHealth = 100;
+    private int damagePerCollision = 10;
+    private int damagePerOpponentCollision = 20;
+    private int maxHealth = 100;
     public int health;
 
     // determines grade in the end
@@ -36,19 +38,17 @@ public class PlayerLogicHandler : MonoBehaviour
     // for invincibility against pursur and pedestrians
     public int t_count = 0;
 
-
-    private bool pendingReset = false;
-    private float resetTimestamp;
-
-
+    
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         health = maxHealth;
         horn = GetComponent<AudioPlayer>();
         explosion = GetComponent<ParticleSystem>();
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = rb.centerOfMass + Vector3.down*0.3f;
     }
 
     // Update is called once per frame
@@ -61,24 +61,19 @@ public class PlayerLogicHandler : MonoBehaviour
             Debug.Log("shield disabled");
         }
 
+        // death
         if (health < 0 && !pendingReset)
         {
             explosion.Play();
             text.text = "Oh no, you died ! \n be careful not to hit things next time";
             continuedText.text = "Sending you back";
             generalTextObject.SetActive(true);
-            resetTimestamp = Time.realtimeSinceStartup + 3f;
+            gameLogic.LoadSceneWithDelay(3.0f, SceneManager.GetActiveScene().name);
             pendingReset = true;
             Debug.Log("resetting scene in 3 sec");
         }
 
-        if (pendingReset)
-        {
-            if (Time.realtimeSinceStartup > resetTimestamp)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-        }
+        
 
     }
 
@@ -132,6 +127,12 @@ public class PlayerLogicHandler : MonoBehaviour
             Debug.Log("game end");
         }
 
+        if (other.gameObject.CompareTag("OpponentTrigger"))
+        {
+            tutorialHandler.TriggerOpponentPrepTutorial();
+            Debug.Log("opponent prep");
+        }
+
         if (other.gameObject.CompareTag("PreCheckpoint"))
         {
             if (!tutorialHandler.checkpointTutorialHasTriggered)
@@ -149,12 +150,6 @@ public class PlayerLogicHandler : MonoBehaviour
             return;
         }
 
-        if (collision.gameObject.CompareTag("Boundary"))
-        {
-            // OK to collide into boundary
-            return;
-        }
-
         if (collision.gameObject.CompareTag("Pursuiter"))
         {
             Debug.Log("Player damege: opponent collision");
@@ -164,10 +159,11 @@ public class PlayerLogicHandler : MonoBehaviour
                 tutorialHandler.TriggerOpponentTutorial();
             }
         }
-        else
+        else if (collision.gameObject.CompareTag("Hittable"))
         {
             health -= damagePerCollision;
             Debug.Log("Player damege: collision");
+            Debug.Log(collision.gameObject.name);
         }
         
     }

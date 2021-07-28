@@ -13,6 +13,7 @@ public class TutorialHandler: MonoBehaviour
     public GameObject tTutorialUi;
     public GameObject opponentTutorialUi;
     public GameObject checkPointTutorialUi;
+    public GameObject opponentPrepTutorialUi;
 
     private GameObject currentTutorialUi;
     public bool enableTutorials;
@@ -22,6 +23,7 @@ public class TutorialHandler: MonoBehaviour
     [HideInInspector] public bool tTutorialHasTriggered = false;
     [HideInInspector] public bool opponentTutorialHasTriggered = false;
     [HideInInspector] public bool checkpointTutorialHasTriggered = false;
+    [HideInInspector] public bool opponentPrepTutorialHasTriggered = false;
 
     public void TriggerMainTutorial()
     {
@@ -66,6 +68,15 @@ public class TutorialHandler: MonoBehaviour
         currentTutorialUi = opponentTutorialUi;
         Debug.Log("opponent tutorial");
         opponentTutorialHasTriggered = true;
+    }
+
+    public void TriggerOpponentPrepTutorial()
+    {
+        Time.timeScale = 0f;
+        opponentPrepTutorialUi.SetActive(true);
+        currentTutorialUi = opponentPrepTutorialUi;
+        Debug.Log("opponent prep tutorial");
+        opponentPrepTutorialHasTriggered = true;
     }
 
     public void TriggerCheckpointTutorial()

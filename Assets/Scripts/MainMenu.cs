@@ -8,14 +8,13 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("DemoLevel");
-        Debug.Log("load Demo Level");
+        TutorialLevel();
     }
 
-    public void DemoLevel()
+    public void TutorialLevel()
     {
-        SceneManager.LoadScene("DemoLevel");
-        Debug.Log("load Demo Level");
+        SceneManager.LoadScene("TutorialLevel");
+        Debug.Log("load Tutorial Level");
     }
 
     public void SelectLevel()

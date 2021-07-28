@@ -6,15 +6,47 @@ public class LevelSelector : MonoBehaviour
 {
 
     public Button[] levelButtons;
+    private float lastUpdate = 0f;
 
-    private void Start()
+    public void Start()
     {
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        Debug.Log("Curret Unlock Levels:" + levelReached.ToString());
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if(i + 1 > levelReached)
+            if (i + 1 > levelReached)
             {
                 levelButtons[i].interactable = false;
+            }
+            else
+            {
+                levelButtons[i].interactable = true;
+            }
+        }
+    }
+
+    public void Update()
+    {
+        if (Time.realtimeSinceStartup < lastUpdate + 1f)
+        {
+            return;
+        }
+        else
+        {
+            lastUpdate = Time.realtimeSinceStartup;
+        }
+
+        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        Debug.Log("Curret Unlock Levels:" + levelReached.ToString());
+        for (int i = 0; i < levelButtons.Length; i++)
+        {
+            if (i + 1 > levelReached)
+            {
+                levelButtons[i].interactable = false;
+            }
+            else
+            {
+                levelButtons[i].interactable = true;
             }
         }
     }

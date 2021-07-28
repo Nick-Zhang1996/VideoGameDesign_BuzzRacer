@@ -12,6 +12,9 @@ TagManager:
   - Pursuiter
   - PreCheckpoint
   - Crates
+  - Ragdoll
+  - Hittable
+  - OpponentTrigger
   layers:
   - Default
   - TransparentFX
