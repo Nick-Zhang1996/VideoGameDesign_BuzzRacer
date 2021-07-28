@@ -101,11 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dd27f434ed02f4ab32e757af4c722e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCollider: {fileID: 0}
-  AllColliders: []
-  AllRigigidbodies: []
   forceRagdoll: 0
-  impulseForce: 1000
+  maxCollisionForce: 0
+  goal: {fileID: 0}
+  travelDistance: 40
   pelvis: {fileID: 1739942163}
 --- !u!54 &51340783
 Rigidbody:
@@ -834,7 +833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067053214699150, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
       propertyPath: m_Name
-      value: Elf_Mesh Variant
+      value: Pedestrian
       objectReference: {fileID: 0}
     - target: {fileID: 1067053214699150, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
       propertyPath: m_TagString

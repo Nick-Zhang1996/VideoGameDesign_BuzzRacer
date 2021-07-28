@@ -48,7 +48,7 @@ public class PlayerLogicHandler : MonoBehaviour
         horn = GetComponent<AudioPlayer>();
         explosion = GetComponent<ParticleSystem>();
         rb = GetComponent<Rigidbody>();
-        rb.centerOfMass = rb.centerOfMass + Vector3.down*0.3f;
+
     }
 
     // Update is called once per frame
@@ -140,6 +140,12 @@ public class PlayerLogicHandler : MonoBehaviour
                 tutorialHandler.TriggerCheckpointTutorial();
             }
         }
+
+        if (other.gameObject.CompareTag("Ragdoll"))
+        {
+            note_count = Mathf.Max(0, note_count - 4);
+            Debug.Log("hit ragdoll, lose notes");
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -154,6 +160,7 @@ public class PlayerLogicHandler : MonoBehaviour
         {
             Debug.Log("Player damege: opponent collision");
             health -= damagePerOpponentCollision;
+            note_count = (int)(note_count * 0.8f);
             if (!tutorialHandler.opponentTutorialHasTriggered)
             {
                 tutorialHandler.TriggerOpponentTutorial();
