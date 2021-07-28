@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class RotatePickup : MonoBehaviour
 {
-    public int rotateSpeed;
+    public float rotateSpeed;
     private void Start()
     {
-        rotateSpeed = 2;
     }
     // Update is called once per frame
     void Update()

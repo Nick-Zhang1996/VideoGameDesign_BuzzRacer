@@ -1,40 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerLogicHandler : MonoBehaviour
 {
 
-    public GameObject gameLogicObject;
-    public GameObject visualShield;
-    public float shieldDuration = 10f;
+    public GameLogicHandler gameLogic;
+    public TutorialHandler tutorialHandler;
+    private AudioPlayer horn;
+    public ParticleSystem explosion;
+    public GameObject generalTextObject;
+    public Text text;
+    public Text continuedText;
+    private Rigidbody rb;
 
-    private GameLogicHandler gameLogic;
+    // shield
+    public GameObject visualShield;
     public bool shieldIsActive;
     private float shieldActiveTime;
-    
+    public float shieldDuration = 10f;
+    private bool pendingReset = false;
+
+    // health and damage
+    // full health 100, 0 health explosion
+    private int damagePerCollision = 10;
+    private int damagePerOpponentCollision = 20;
+    private int maxHealth = 100;
+    public int health;
 
     // determines grade in the end
     public int note_count = 0;
-    // for speed boost
+    // for health repair
     public int buzz_count = 0;
     // for invincibility against pursur and pedestrians
     public int t_count = 0;
 
-    // full health 100, 0 health explosion
-    public int damagePerCollision = 10;
-    public int damagePerOpponentCollision = 20;
-    public int maxHealth = 100;
-    public int health;
+    
 
-    private AudioPlayer horn;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         health = maxHealth;
-        horn = this.GetComponent<AudioPlayer>();
-        gameLogic = gameLogicObject.GetComponent<GameLogicHandler>();
+        horn = GetComponent<AudioPlayer>();
+        explosion = GetComponent<ParticleSystem>();
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = rb.centerOfMass + Vector3.down*0.3f;
     }
 
     // Update is called once per frame
@@ -46,6 +60,21 @@ public class PlayerLogicHandler : MonoBehaviour
             visualShield.SetActive(false);
             Debug.Log("shield disabled");
         }
+
+        // death
+        if (health < 0 && !pendingReset)
+        {
+            explosion.Play();
+            text.text = "Oh no, you died ! \n be careful not to hit things next time";
+            continuedText.text = "Sending you back";
+            generalTextObject.SetActive(true);
+            gameLogic.LoadSceneWithDelay(3.0f, SceneManager.GetActiveScene().name);
+            pendingReset = true;
+            Debug.Log("resetting scene in 3 sec");
+        }
+
+        
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -54,9 +83,9 @@ public class PlayerLogicHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Note"))
         {
             Debug.Log("Collect Note");
-            if (!gameLogic.notesTutorialHasTriggered)
+            if (!tutorialHandler.notesTutorialHasTriggered)
             {
-                gameLogic.TriggerNotesTutorial();
+                tutorialHandler.TriggerNotesTutorial();
             }
             other.gameObject.SetActive(false);
             note_count += 1;
@@ -66,9 +95,9 @@ public class PlayerLogicHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Buzz"))
         {
             Debug.Log("Collect Buzz, health return to max");
-            if (!gameLogic.buzzTutorialHasTriggered)
+            if (!tutorialHandler.buzzTutorialHasTriggered)
             {
-                gameLogic.TriggerBuzzTutorial();
+                tutorialHandler.TriggerBuzzTutorial();
             }
             other.gameObject.SetActive(false);
             health = maxHealth;
@@ -79,9 +108,9 @@ public class PlayerLogicHandler : MonoBehaviour
         if (other.gameObject.CompareTag("T"))
         {
             Debug.Log("Collect T, invincibility");
-            if (!gameLogic.tTutorialHasTriggered)
+            if (!tutorialHandler.tTutorialHasTriggered)
             {
-                gameLogic.TriggerTTutorial();
+                tutorialHandler.TriggerTTutorial();
             }
             other.gameObject.SetActive(false);
             horn.m_ToggleChange = true;
@@ -93,13 +122,23 @@ public class PlayerLogicHandler : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("CheckPoint"))
-        {
-            if (!gameLogic.checkpointTutorialHasTriggered)
-            {
-                gameLogic.TriggerCheckpointTutorial();
-            }
+        { 
             gameLogic.PlayerReachedCheckpoint();
             Debug.Log("game end");
+        }
+
+        if (other.gameObject.CompareTag("OpponentTrigger"))
+        {
+            tutorialHandler.TriggerOpponentPrepTutorial();
+            Debug.Log("opponent prep");
+        }
+
+        if (other.gameObject.CompareTag("PreCheckpoint"))
+        {
+            if (!tutorialHandler.checkpointTutorialHasTriggered)
+            {
+                tutorialHandler.TriggerCheckpointTutorial();
+            }
         }
     }
 
@@ -111,25 +150,20 @@ public class PlayerLogicHandler : MonoBehaviour
             return;
         }
 
-        if (collision.gameObject.CompareTag("Boundary"))
-        {
-            // OK to collide into boundary
-            return;
-        }
-
         if (collision.gameObject.CompareTag("Pursuiter"))
         {
             Debug.Log("Player damege: opponent collision");
             health -= damagePerOpponentCollision;
-            if (!gameLogic.opponentTutorialHasTriggered)
+            if (!tutorialHandler.opponentTutorialHasTriggered)
             {
-                gameLogic.TriggerOpponentTutorial();
+                tutorialHandler.TriggerOpponentTutorial();
             }
         }
-        else
+        else if (collision.gameObject.CompareTag("Hittable"))
         {
             health -= damagePerCollision;
             Debug.Log("Player damege: collision");
+            Debug.Log(collision.gameObject.name);
         }
         
     }

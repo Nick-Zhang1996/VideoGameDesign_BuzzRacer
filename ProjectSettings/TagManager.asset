@@ -10,7 +10,11 @@ TagManager:
   - CheckPoint
   - Boundary
   - Pursuiter
-  - NPC
+  - PreCheckpoint
+  - Crates
+  - Ragdoll
+  - Hittable
+  - OpponentTrigger
   layers:
   - Default
   - TransparentFX
