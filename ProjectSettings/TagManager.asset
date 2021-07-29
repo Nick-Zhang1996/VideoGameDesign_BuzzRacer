@@ -12,6 +12,10 @@ TagManager:
   - Pursuiter
   - PreCheckpoint
   - Crates
+  - Ragdoll
+  - Hittable
+  - OpponentTrigger
+  - Grass
   layers:
   - Default
   - TransparentFX
@@ -21,7 +25,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - WalkableGround
   - 
   - 
   - 
