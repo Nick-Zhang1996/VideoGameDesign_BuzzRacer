@@ -15,6 +15,7 @@ TagManager:
   - Ragdoll
   - Hittable
   - OpponentTrigger
+  - Grass
   layers:
   - Default
   - TransparentFX
