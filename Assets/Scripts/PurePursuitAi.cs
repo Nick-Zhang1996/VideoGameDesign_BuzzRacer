@@ -8,6 +8,7 @@ public class PurePursuitAi : MonoBehaviour
     public GameObject Target;
     private Rigidbody rb;
     public float minSpeed;
+    public float maxSpeed = 25f;
     [HideInInspector] public float targetSpeed;
     public float steering;
     private float wheelbase = 3.33f;
@@ -42,7 +43,7 @@ public class PurePursuitAi : MonoBehaviour
             steering = Mathf.Atan(wheelbase / radius) * (targetAngle > 0 ? 1f : -1f);
             steering = Mathf.Rad2Deg * steering;
 
-            targetSpeed = Mathf.Max(minSpeed, rb.velocity.magnitude);
+            targetSpeed = Mathf.Clamp(rb.velocity.magnitude, minSpeed, maxSpeed);
         }
     }
 }
