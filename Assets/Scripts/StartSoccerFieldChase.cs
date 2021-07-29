@@ -19,7 +19,7 @@ public class StartSoccerFieldChase : MonoBehaviour
             Debug.Log("Length of pursuers is | " + pursuers.Length);
             foreach (GameObject x in pursuers) {
                 PurePursuitAi script = x.GetComponent<PurePursuitAi>();
-                script.Target = GameObject.Find("Player");
+                script.startChase = true;
             }
         }
     }
