@@ -29,6 +29,8 @@ public class SpawnAi : MonoBehaviour
             for (int i = 0; i < ai.Length; i++)
             {
                 aiController[i].enabled = true;
+                PurePursuitAi script = aiController[i].GetComponent<PurePursuitAi>();
+                script.startChase = true;
             }
         }
         Debug.Log("ai enabled");
