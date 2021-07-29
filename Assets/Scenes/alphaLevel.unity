@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28524,7 +28524,7 @@ MonoBehaviour:
   hudUi: {fileID: 175282196}
   pauseUi: {fileID: 175282195}
   player: {fileID: 1234025050}
-  gameEndUiText: {fileID: 0}
+  gameEndUiText: {fileID: 2044105909}
   pendingReset: 0
   resetTimestamp: 0
   resetScene: 
@@ -28610,7 +28610,7 @@ MonoBehaviour:
   opponentTutorialUi: {fileID: 2080950753}
   checkPointTutorialUi: {fileID: 1812505600}
   opponentPrepTutorialUi: {fileID: 0}
-  enableTutorials: 1
+  enableTutorials: 0
   mainTutorialHasTriggered: 0
   notesTutorialHasTriggered: 0
   buzzTutorialHasTriggered: 0
@@ -36256,6 +36256,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2030295084}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2044105909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4607017536295436270, guid: 6b6a53537da4fac4aae58741ae5e5cbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 175282194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2046575007
 GameObject:
   m_ObjectHideFlags: 0
