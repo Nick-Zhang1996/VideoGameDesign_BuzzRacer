@@ -393,6 +393,7 @@ MonoBehaviour:
   minSpeed: 5
   targetSpeed: 0
   steering: 0
+  startChase: 0
 --- !u!114 &1662616480800077769
 MonoBehaviour:
   m_ObjectHideFlags: 0

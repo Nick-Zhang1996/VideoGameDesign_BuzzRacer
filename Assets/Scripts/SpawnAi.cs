@@ -5,14 +5,14 @@ using UnityEngine;
 public class SpawnAi : MonoBehaviour
 {
     public GameObject[] ai;
-    private AiCarController[] aiController;
+    private PurePursuitAi[] aiPurePursuit;
     // Start is called before the first frame update
     void Start()
     {
-        aiController = new AiCarController[ai.Length];
+        aiPurePursuit = new PurePursuitAi[ai.Length];
         for (int i=0; i<ai.Length; i++)
         {
-            aiController[i] = ai[i].GetComponent<AiCarController>();
+            aiPurePursuit[i] = ai[i].GetComponent<PurePursuitAi>();
         }
     }
 
@@ -28,9 +28,8 @@ public class SpawnAi : MonoBehaviour
         {
             for (int i = 0; i < ai.Length; i++)
             {
-                aiController[i].enabled = true;
-                PurePursuitAi script = aiController[i].GetComponent<PurePursuitAi>();
-                script.startChase = true;
+                aiPurePursuit[i].startChase = true;
+
             }
         }
         Debug.Log("ai enabled");
