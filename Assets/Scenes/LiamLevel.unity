@@ -6453,7 +6453,7 @@ MonoBehaviour:
   resetScene: 
   totalNotes: 12
   minGpaToPass: 2.5
-  level_id: 2
+  level_id: 3
 --- !u!4 &1630965920
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotatePickup : MonoBehaviour
 {
-    public float rotateSpeed;
+    private float rotateSpeed = 0.3f;
     private void Start()
     {
     }

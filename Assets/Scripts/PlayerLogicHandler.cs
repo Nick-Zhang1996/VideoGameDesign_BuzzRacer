@@ -141,6 +141,12 @@ public class PlayerLogicHandler : MonoBehaviour
             }
         }
 
+        // damageable object
+        if (shieldIsActive)
+        {
+            Debug.Log("Player collision, shield active, no damage");
+            return;
+        }
         if (other.gameObject.CompareTag("Ragdoll"))
         {
             note_count = Mathf.Max(0, note_count - 4);
