@@ -32,17 +32,22 @@ public class CarController : MonoBehaviour
     public float currentMotorTorque;
     public float currentBrakeTorque;
 
+    private float upsideDownTimer;
+    private bool timeToFlip;
 
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+        timeToFlip = false;
     }
+
     private void FixedUpdate()
     {
         HandleMotor();
         HandleSteering();
         UpdateWheels();
+        HandleUpsideDown();
     }
     void OnHandbrake(InputValue movementValue)
     {
@@ -154,4 +159,53 @@ public class CarController : MonoBehaviour
         trans.position = pos;
     }
 
+
+    /// <summary>
+    /// Applies rotation force and Y force in order to flip car over until it's
+    /// z rotation is within a specified range.
+    /// </summary>
+    /// <param name="tolerance">The number in degrees for it to be correct again and stop applying force</param>
+    private void FlipCarOver(float tolerance)
+    {
+        float currRotation = this.GetComponent<Transform>().localEulerAngles.z;
+        Vector3 angularVelocity = new Vector3(0, 0, -360);
+        Quaternion deltaRotation = Quaternion.Euler(angularVelocity * Time.fixedDeltaTime);
+
+        Debug.Log("Should have applied a force");
+        Vector3 upForce = new Vector3(0f, 300.0f, 0f);
+        rb.AddForce(upForce, ForceMode.Impulse);
+        rb.MoveRotation(rb.rotation * deltaRotation);
+
+        if (Math.Abs(currRotation) < tolerance)
+        {
+            timeToFlip = false;
+        }
+    }
+
+    private void HandleUpsideDown()
+    {
+        float currRotation = this.GetComponent<Transform>().localEulerAngles.z;
+        //Debug.Log("Rotation z axis | " + currRotation);
+        if (Math.Abs(currRotation) >= 89 && Math.Abs(currRotation) <= 271)
+        {
+            if (upsideDownTimer > 3.0f)
+            {
+                timeToFlip = true;
+            }
+            else
+            {
+                Debug.Log("We are adding to the upside down timer | " + upsideDownTimer); ;
+                upsideDownTimer += Time.deltaTime;
+            }
+        }
+        else
+        {
+            upsideDownTimer = 0f;
+        }
+
+        if (timeToFlip)
+        {
+            FlipCarOver(20);
+        }
+    }
 }

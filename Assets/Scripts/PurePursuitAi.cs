@@ -26,6 +26,10 @@ public class PurePursuitAi : MonoBehaviour
     {
         // calc 2d steering
         //Debug.DrawLine(transform.position, Target.transform.position);
+
+        if (!Target) {
+            return;
+        }
         
         Vector3 targetPosLocal = transform.InverseTransformPoint(Target.transform.position);
         float distance = Mathf.Sqrt(targetPosLocal.x * targetPosLocal.x + targetPosLocal.z * targetPosLocal.z);
